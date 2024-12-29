@@ -1,7 +1,13 @@
 {
   "extends": "@tsconfig/node18-strictest/tsconfig.json",
   "compilerOptions": {
-    // outDir path is computed from the tsconfig.json where the field is defined. It needs to be defined in the tsconfig.json of each project.
+    "baseUrl": ".",
+    "rootDir": "src",
+    "outDir": "dist",
+    "lib": [
+      "es2017",
+      "dom"
+    ],
     "composite": true,
     "incremental": true,
     "exactOptionalPropertyTypes": false,
@@ -12,5 +18,10 @@
     "noImplicitOverride": false,
     "checkJs": false
   },
-  "exclude": ["node_modules"]
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
