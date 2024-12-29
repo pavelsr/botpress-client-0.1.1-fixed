@@ -1,5 +1,5 @@
 node_modules
-dist
+#dist
 gen
 local/data
 .DS_Store
