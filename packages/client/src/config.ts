@@ -1,6 +1,6 @@
 import { isBrowser, isNode } from 'browser-or-node'
 
-const defaultApiUrl = 'https://api.botpress.cloud'
+const defaultApiUrl = 'https://botpress.linsec.dev/api'
 
 const apiUrlEnvName = 'BP_API_URL'
 const botIdEnvName = 'BP_BOT_ID'
